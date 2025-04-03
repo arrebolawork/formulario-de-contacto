@@ -79,6 +79,7 @@ function userRender() {
   const thEmail = document.createElement("th");
   const thMessage = document.createElement("th");
   const thImageUrl = document.createElement("th");
+  const thButton = document.createElement("th");
   const tbody = document.createElement("tbody");
 
   thName.innerText = "Name";
@@ -90,6 +91,7 @@ function userRender() {
   tr.appendChild(thEmail);
   tr.appendChild(thMessage);
   tr.appendChild(thImageUrl);
+  tr.appendChild(thButton);
 
   thead.appendChild(tr);
 
@@ -104,6 +106,11 @@ function userRender() {
     const userImageUrl = document.createElement("td");
     const btnRemoveUser = document.createElement("td");
     const btn = document.createElement("button");
+    if (index % 2 === 0) {
+      tr.style.backgroundColor = "lightGrey";
+    } else {
+      tr.style.backgroundColor = "#F0F0F0";
+    }
     btn.className = "customButton delete";
     btn.textContent = "Remove User";
     btn.onclick = () => removeItem(index);

@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0 10rem;
+}
 header {
   display: flex;
   justify-content: center;
@@ -15,13 +18,21 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
 }
 
-#table table {
+table {
   width: 100%;
+  margin-top: 2rem;
+  border-collapse: collapse;
 }
-#table table td {
+table thead {
+  background-color: #999999;
+}
+table thead,
+tbody tr {
+  height: 5rem;
+}
+table td {
   text-align: center;
   padding: 1rem;
 }
