@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./main.js" defer></script>
+    <title>Dormulario de contacto</title>
+  </head>
+  <body>
+    <header>
+      <h1>Usuario de contacto</h1>
+    </header>
+    <section>
+      <h2>Formulario de contacto</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <label for="message">Message</label>
+        <input type="text" name="message" id="message" />
+        <label for="imageUrl">Image URL</label>
+        <input type="text" name="imageUrl" id="imageUrl" />
+        <div class="buttonFooter">
+          <input type="submit" value="Enviar" class="customButton" />
+          <input type="button" value="Remove All" class="customButton delete" id="removeAll" />
+        </div>
+      </form>
+    </section>
+    <section id="table"></section>
+  </body>
+</html>
